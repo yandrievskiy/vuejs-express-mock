@@ -1,5 +1,6 @@
+const fetch = require("node-fetch");
+const paginate = require("paginate-array");
 const postsData = require('../models/posts');
-const { chunk } = require('../helpers');
 
 const createUser = (req, res) => {
   const data = JSON.parse(req.body);
@@ -14,10 +15,9 @@ const createUser = (req, res) => {
 };
 
 const getPosts = (req, res) => {
-  console.log(chunk(postsData, req.query.perPage));
-
-
-  res.status(200).send(postsData);
+  const { currentPage = 1, perPage = 10} = req.query;
+  const paginateCollection = paginate(postsData, currentPage, perPage);
+  res.status(200).send(paginateCollection);
 };
 
 module.exports = {

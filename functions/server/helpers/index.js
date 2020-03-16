@@ -7,4 +7,4 @@ const chunk = (arr, size) => {
 
 module.exports = {
   chunk,
-}dsfdsfdsfdddsdfsdf
+}
