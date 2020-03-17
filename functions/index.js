@@ -4,4 +4,4 @@ const api = functions.runWith({memory: '2GB', timeoutSeconds: 120 }).https.onReq
 
 module.exports = {
   api
-}; 
+};

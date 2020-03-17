@@ -9,5 +9,4 @@ app.use(cors({origin: true}))
   .use(bodyParser.json())
   .use(bodyParser.urlencoded({extended: false}))
   .use('/', router);
-
 module.exports = app;
