@@ -1,4 +1,4 @@
-const PASSWORD_RULES_REGEX = new RegExp('^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[_!@+#\$%\^&\*])(?=.{8,})');
+const PASSWORD_RULES_REGEX = new RegExp('^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[_!@+#$%^&*])(?=.{8,})');
 
 const mapDataToResponse = (data) => {
   const response = {
