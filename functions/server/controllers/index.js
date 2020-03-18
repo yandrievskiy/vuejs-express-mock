@@ -13,12 +13,11 @@ const auth = (req, res, next) => {
 
   const user = {
     email: data['email'],
-    password: data['password'],
-    gender: data['gender'],
-    agree: data['agree']
+    role: 'user',
+    token: Math.random().toString(36).substring(7),
   }
 
-  res.status(200).send(`User successfully created`);
+  res.status(200).send({user, success: true});
 };
 
 const getPosts = (req, res) => {
@@ -34,7 +33,21 @@ const getPosts = (req, res) => {
   res.status(200).send(response);
 };
 
+const getSinglePost = (req, res) => {
+  let data = postsData.filter((item) => {
+    return String(item.id) === String(req.params.id);
+  });
+
+  if (data.length) {
+    res.status(200).send(data[0]);
+  } else {
+    res.status(404).send('Post id not found');
+  }
+
+};
+
 module.exports = {
   auth,
   getPosts,
+  getSinglePost,
 }
