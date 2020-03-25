@@ -1,0 +1,39 @@
+[debug] [2020-03-24T15:09:42.734Z] ----------------------------------------------------------------------
+[debug] [2020-03-24T15:09:42.736Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2020-03-24T15:09:42.736Z] CLI Version:   7.14.0
+[debug] [2020-03-24T15:09:42.736Z] Platform:      darwin
+[debug] [2020-03-24T15:09:42.736Z] Node Version:  v10.15.3
+[debug] [2020-03-24T15:09:42.743Z] Time:          Tue Mar 24 2020 17:09:42 GMT+0200 (Eastern European Standard Time)
+[debug] [2020-03-24T15:09:42.743Z] ----------------------------------------------------------------------
+[debug] [2020-03-24T15:09:42.743Z] 
+[debug] [2020-03-24T15:09:42.757Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-03-24T15:09:42.757Z] > authorizing via signed-in user
+[debug] [2020-03-24T15:09:42.757Z] [iam] checking project vuejs-c6236 for permissions ["firebase.projects.get"]
+[debug] [2020-03-24T15:09:42.759Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-03-24T15:09:42.759Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-03-24T15:09:43.028Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-24T15:09:43.035Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/vuejs-c6236:testIamPermissions  
+
+[debug] [2020-03-24T15:09:44.040Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-24T15:09:44.041Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/vuejs-c6236  
+ 
+[debug] [2020-03-24T15:09:44.354Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/employee/Desktop/vuejs-express-mock'...
+[info] 
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "10"
+[info] ✔  functions: functions emulator started at http://localhost:5000
+[info] i  functions: Watching "/Users/employee/Desktop/vuejs-express-mock/functions" for Cloud Functions...
+[debug] [2020-03-24T15:09:44.398Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-24T15:09:44.398Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-03-24T15:09:44.398Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-24T15:09:44.399Z] [worker-~diagnostic~-4fd736c6-ee42-4e0b-a935-c4881d9f4e01]: Assigning socketPath: /var/folders/q7/kfd3d01532qcw5_01dkgtrn40000gp/T/fire_emu_3223.sock
+[debug] [2020-03-24T15:09:44.400Z] [worker-~diagnostic~-4fd736c6-ee42-4e0b-a935-c4881d9f4e01]: BUSY
+[debug] [2020-03-24T15:09:44.712Z] [runtime-status] [3223] Functions runtime initialized. {"cwd":"/Users/employee/Desktop/vuejs-express-mock/functions","node_version":"10.15.3"}
+[debug] [2020-03-24T15:09:44.713Z] [runtime-status] [3223] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-24T15:09:44.718Z] [runtime-status] [3223] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/Users/employee/Desktop/vuejs-express-mock/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-03-24T15:09:44.719Z] [runtime-status] [3223] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/employee/Desktop/vuejs-express-mock/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-24T15:09:44.722Z] [runtime-status] [3223] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/employee/Desktop/vuejs-express-mock/functions/node_modules/firebase-functions/lib/index.js"}
+[info] ✔  functions[api]: http function initialized (http://localhost:5000/vuejs-c6236/us-central1/api).
+[debug] [2020-03-24T15:09:44.935Z] [worker-~diagnostic~-4fd736c6-ee42-4e0b-a935-c4881d9f4e01]: IDLE
